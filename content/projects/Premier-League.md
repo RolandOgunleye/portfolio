@@ -21,4 +21,4 @@ Predictor, providing accurate forecasts for EPL matches. Engineered data retriev
 ![Jupyter Lab](/projects/Premier-League/dataML.png)
 
 ## Final Thoughts 
-IThe project achieved a commendable **70% prediction accuracy**, highlighting proficiency in end-to-end data management and machine learning applications, ultimately delivering an innovative solution for accurate EPL match forecasts.
+The project achieved a commendable **70% prediction accuracy**, highlighting proficiency in end-to-end data management and machine learning applications, ultimately delivering an innovative solution for accurate EPL match forecasts.
