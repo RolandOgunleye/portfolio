@@ -1,0 +1,96 @@
+baseURL: "https://arkalim.org"
+languageCode: en-us
+title: Roland Ogunleye
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+  
+    - identifier: projects
+      name: Projects
+      url: /projects
+      weight: 30
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: search
+      name: Search
+      url: /search
+      weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Roland Ogunleye"
+    subtitle: Hey there 👋! I'm Roland, a Computer Engineering student at Toronto Metropolitan University. Currently honing my skills in Python, C/C++, JavaScript, and various developer tools. I've been involved in diverse projects, including a predictive EPL Web Scraper, a Tourist Booking Website, and a Property Listing Application. Contributed actively to the 2022 Ryerson Rams Robotic team, achieving 11th place in the University Rover Challenge. Fuelled by my unyielding curiosity and personal drive, I'm constantly venturing into new territories, shaping the evolving landscape of technology. Eagerly seeking Software Engineering opportunities for 2024, my dynamic skill set and passion for innovation position me as a valuable candidate ready to contribute to your team's success.
+    imageUrl: "home/77862446.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:rogunleye@torontomu.ca"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/r-ogun/"
+    - name: "github"
+      url: "https://github.com/RolandOgunleye"
+    - name: "cv"
+      url: "https://drive.google.com/file/d/13mYLFKbx1p27tKFxpWr-rN-qJrc1VdGR/view?usp=sharing"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
